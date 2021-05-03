@@ -142,14 +142,8 @@ window.addEventListener("DOMContentLoaded", () => {
       this.title = title;
       this.descr = descr;
       this.price = price;
-      this.transfer = 27;
       this.classes = classes;
       this.parent = document.querySelector(parentSelector);
-      this.changeToUAN();
-    }
-
-    changeToUAN() {
-      this.price = this.transfer * this.price;
     }
 
     render() {
